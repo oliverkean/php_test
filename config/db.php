@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$host = $_ENV['MYSQLHOST'] ?? 'localhost';
+$host = 'mysql://root:IrwkVnyMhGDtiBJGulkPZMtPwUrzRwtz@tramway.proxy.rlwy.net:15948/railway';
 $username = $_ENV['MYSQLUSER'] ?? 'root';
 $password = $_ENV['MYSQLPASSWORD'] ?? '';
 $dbname = $_ENV['MYSQLDATABASE'] ?? 'php_test';

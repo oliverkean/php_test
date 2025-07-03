@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$host = 'mysql.railway.internal';
-$username = 'root';
-$password = 'IrwkVnyMhGDtiBJGulkPZMtPwUrzRwtz';
-$dbname ='railway';
+$host = 'sql111.infinityfree.com';
+$username = 'if0_39387616 ';
+$password = 'Yt1tqONgGKp';
+$dbname ='if0_39387616_php_test';
 $port = '3306';
 
 try {

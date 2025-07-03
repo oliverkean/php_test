@@ -1,9 +1,11 @@
 <?php
 session_start();
-define('host', 'localhost');
-define('user', 'root');
-define('pass', '');
-define('db', 'php_test');
+$host = $_ENV['MYSQLHOST'] ?? 'localhost';
+$username = $_ENV['MYSQLHOST'] ?? 'root';
+$password = $_ENV['MYSQLHOST'] ?? '';
+$dbname = $_ENV['MYSQLHOST'] ?? 'php_test';
+$port = $_ENV['MYSQLHOST'] ?? '3306';
+
 try {
     $connect = new PDO("mysql:host=" . host . "; db=" . db, user, pass);
     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

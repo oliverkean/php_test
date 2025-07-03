@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-$host = 'mysql://root:IrwkVnyMhGDtiBJGulkPZMtPwUrzRwtz@tramway.proxy.rlwy.net:15948/railway';
-$username = $_ENV['MYSQLUSER'] ?? 'root';
-$password = $_ENV['MYSQLPASSWORD'] ?? '';
-$dbname = $_ENV['MYSQLDATABASE'] ?? 'php_test';
-$port = $_ENV['MYSQLPORT'] ?? '3306';
+$host = 'mysql.railway.internal';
+$username = 'root';
+$password = 'IrwkVnyMhGDtiBJGulkPZMtPwUrzRwtz';
+$dbname ='railway';
+$port = '3306';
 
 try {
     $dsn = "mysql:host=$host;port=$port;dbname=$dbname";

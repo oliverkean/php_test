@@ -1,6 +1,6 @@
 <?php
 include 'config/db.php';
-include 'header.php';
+include 'components/header.php';
 
 try {
     $connect = new PDO("mysql:host=" . host . "; dbname=" . db, user, pass);
@@ -97,4 +97,4 @@ try {
     </div>
 </body>
 
-<?php include 'footer.php'; ?>
+<?php include 'components/footer.php'; ?>

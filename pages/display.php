@@ -1,6 +1,6 @@
 <?php
 include 'config/db.php';
-include 'header.php';
+include 'components/header.php';
 
 $customer = $_SESSION['customer'] ?? [];
 $payment = $_SESSION['payment'] ?? [];
@@ -39,4 +39,4 @@ $payment = $_SESSION['payment'] ?? [];
     </div>
 </body>
 
-<?php include 'footer.php'; ?>
+<?php include 'components/footer.php'; ?>

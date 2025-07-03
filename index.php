@@ -26,7 +26,7 @@ try {
             ':email'      => $_POST['email']
         ]);
 
-        header("Location: payment.php");
+        header("Location: pages/payment.php");
         exit();
     }
 } catch (PDOException $e) {

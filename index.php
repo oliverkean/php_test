@@ -3,7 +3,8 @@ include 'config/db.php';
 include 'components/header.php';
 
 try {
-    $connect = new PDO("mysql:host=" . host . "; dbname=" . db, user, pass);
+    $dsn = "mysql:host=$host;port=$port;dbname=$dbname";
+    $connect = new PDO($dsn, $username, $password);
     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
